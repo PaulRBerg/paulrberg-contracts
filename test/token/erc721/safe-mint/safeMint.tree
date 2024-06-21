@@ -1,0 +1,13 @@
+safeMint.t.sol
+├── when the IERC721Receiver-onERC721Received method has no implementation
+│  └── it should revert
+└── when the IERC721Receiver-onERC721Received method has implementation
+   ├── when the IERC721Receiver-onERC721Received method returns wrong data
+   │  └── it should revert
+   └── when the IERC721Receiver-onERC721Received method returns correct data
+      ├── when the recipient is an EOA
+      │  └── it should mint the token safely
+      ├── when the recipient is a contract and there is no additional data
+      │  └── it should mint the token safely
+      └── when the recipient is a contract and there is an additional data
+         └── it should mint the token safely

@@ -1,0 +1,12 @@
+approve.t.sol
+├── when the to address is the current owner
+│  └── it should revert
+└── when the to address is not the current owner
+   ├── when the caller is neither the owner nor is approved
+   │  └── it should revert
+   ├── when the caller is the owner
+   │  ├── it should make the approval
+   │  └── it should emit an Approval event
+   └── when the caller is approved
+      ├── it should make the approval
+      └── it should emit an Approval event

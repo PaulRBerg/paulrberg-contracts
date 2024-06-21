@@ -1,0 +1,9 @@
+mint.t.sol
+├── when the to address is the zero address
+│  └── it should revert
+└── when the to address is not the zero address
+    ├── when the token already exists
+    │  └── it should revert
+    └── when the token does not exist
+       ├── it should mint the token
+       └── it should emit a Transfer event

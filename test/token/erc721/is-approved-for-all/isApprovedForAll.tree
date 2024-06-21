@@ -1,0 +1,5 @@
+isApprovedForAll.t.sol
+├── when the operator is not approved for any of the owner's tokens
+│  └── it should return false
+└── when the operator is approved for all the owner's tokens
+   └── it should return true

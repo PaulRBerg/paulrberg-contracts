@@ -1,0 +1,6 @@
+burn.t.sol
+├── when the token id does not exist
+│  └── it should revert
+└── when the token id exists
+   ├── it should burn the token id
+   └── it should emit a Transfer event

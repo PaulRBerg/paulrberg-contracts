@@ -1,0 +1,18 @@
+transferFrom.t.sol
+├── when the from address is not the owner of the token id
+│  └── it should revert
+└── when the from address is the owner of the token id
+   ├── when the to address is the zero address
+   │  └── it should revert
+   └── when the to address is not the zero address
+      ├── when the caller is not the from address nor the operator nor approved
+      │  └── it should revert 
+      ├── when the caller is the from address
+      │  ├── it should make the transfer
+      │  └── it should emit a Transfer event
+      ├── when the caller is the operator
+      │  ├── it should make the transfer
+      │  └── it should emit a Transfer event
+      └── when the caller is approved
+         ├── it should make the transfer
+         └── it should emit a Transfer event

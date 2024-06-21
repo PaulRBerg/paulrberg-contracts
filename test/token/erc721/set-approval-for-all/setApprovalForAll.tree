@@ -1,0 +1,10 @@
+setApprovalForAll.t.sol
+├── when the caller is the operator
+│  └── it should revert
+└── when the caller is not the operator
+   ├── when the approved value is true
+   │  ├── it should set the aprroval value for all the tokens
+   │  └── it should emit a ApprovalForAll event
+   └── when the approved value is false
+      ├── it should set the aprroval value for all the tokens
+      └── it should emit a ApprovalForAll event

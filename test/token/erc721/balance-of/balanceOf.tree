@@ -1,0 +1,5 @@
+balanceOf.t.sol
+├── when the owner address is the zero address
+│  └── it should revert
+└── when the owner address is not the zero address 
+   └── it should return the correct balance 
